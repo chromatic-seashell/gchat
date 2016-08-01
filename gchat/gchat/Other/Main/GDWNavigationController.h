@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GDWNavigationController.h
 //  gchat
 //
 //  Created by apple on 16/8/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GDWNavigationController : UINavigationController
 
 @end
-

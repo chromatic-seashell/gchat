@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GDWTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]  init];
+    GDWTabBarController *tabVc = [[GDWTabBarController alloc]  init];
+    self.window.rootViewController = tabVc;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

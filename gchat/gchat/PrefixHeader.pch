@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  gchat
+//
+//  Created by apple on 16/8/1.
+//  Copyright © 2016年 apple. All rights reserved.
+//
+
+#ifdef __OBJC__
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#pragma mark - -------------------------常用宏-------------------------
+// 1.颜色
+#define KColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define KRGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+
+
+
+#endif /* PrefixHeader_pch */
+#endif
