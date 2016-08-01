@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E2CCC91D4F495000748868 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2CCC81D4F495000748868 /* main.m */; };
+		18E2CCCC1D4F495000748868 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2CCCB1D4F495000748868 /* AppDelegate.m */; };
+		18E2CCCF1D4F495000748868 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2CCCE1D4F495000748868 /* ViewController.m */; };
+		18E2CCD21D4F495000748868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E2CCD01D4F495000748868 /* Main.storyboard */; };
+		18E2CCD41D4F495000748868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E2CCD31D4F495000748868 /* Assets.xcassets */; };
+		18E2CCD71D4F495000748868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E2CCD51D4F495000748868 /* LaunchScreen.storyboard */; };
+		18E2CCE21D4F495000748868 /* gchatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2CCE11D4F495000748868 /* gchatTests.m */; };
+		18E2CCED1D4F495000748868 /* gchatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2CCEC1D4F495000748868 /* gchatUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E2CCDE1D4F495000748868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E2CCBC1D4F495000748868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E2CCC31D4F495000748868;
+			remoteInfo = gchat;
+		};
+		18E2CCE91D4F495000748868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E2CCBC1D4F495000748868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E2CCC31D4F495000748868;
+			remoteInfo = gchat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18E2CCC41D4F495000748868 /* gchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E2CCC81D4F495000748868 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18E2CCCA1D4F495000748868 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18E2CCCB1D4F495000748868 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18E2CCCD1D4F495000748868 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18E2CCCE1D4F495000748868 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18E2CCD11D4F495000748868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E2CCD31D4F495000748868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18E2CCD61D4F495000748868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18E2CCD81D4F495000748868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E2CCDD1D4F495000748868 /* gchatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gchatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E2CCE11D4F495000748868 /* gchatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gchatTests.m; sourceTree = "<group>"; };
+		18E2CCE31D4F495000748868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E2CCE81D4F495000748868 /* gchatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gchatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E2CCEC1D4F495000748868 /* gchatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gchatUITests.m; sourceTree = "<group>"; };
+		18E2CCEE1D4F495000748868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E2CCC11D4F495000748868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E2CCDA1D4F495000748868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E2CCE51D4F495000748868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E2CCBB1D4F495000748868 = {
+			isa = PBXGroup;
+			children = (
+				18E2CCC61D4F495000748868 /* gchat */,
+				18E2CCE01D4F495000748868 /* gchatTests */,
+				18E2CCEB1D4F495000748868 /* gchatUITests */,
+				18E2CCC51D4F495000748868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E2CCC51D4F495000748868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E2CCC41D4F495000748868 /* gchat.app */,
+				18E2CCDD1D4F495000748868 /* gchatTests.xctest */,
+				18E2CCE81D4F495000748868 /* gchatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E2CCC61D4F495000748868 /* gchat */ = {
+			isa = PBXGroup;
+			children = (
+				18E2CCFA1D4F4BE700748868 /* Classes */,
+				18E2CCFB1D4F4BE700748868 /* Other */,
+				18E2CCCA1D4F495000748868 /* AppDelegate.h */,
+				18E2CCCB1D4F495000748868 /* AppDelegate.m */,
+				18E2CCCD1D4F495000748868 /* ViewController.h */,
+				18E2CCCE1D4F495000748868 /* ViewController.m */,
+				18E2CCD01D4F495000748868 /* Main.storyboard */,
+				18E2CCD31D4F495000748868 /* Assets.xcassets */,
+				18E2CCD51D4F495000748868 /* LaunchScreen.storyboard */,
+				18E2CCD81D4F495000748868 /* Info.plist */,
+				18E2CCC71D4F495000748868 /* Supporting Files */,
+			);
+			path = gchat;
+			sourceTree = "<group>";
+		};
+		18E2CCC71D4F495000748868 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E2CCC81D4F495000748868 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E2CCE01D4F495000748868 /* gchatTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E2CCE11D4F495000748868 /* gchatTests.m */,
+				18E2CCE31D4F495000748868 /* Info.plist */,
+			);
+			path = gchatTests;
+			sourceTree = "<group>";
+		};
+		18E2CCEB1D4F495000748868 /* gchatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18E2CCEC1D4F495000748868 /* gchatUITests.m */,
+				18E2CCEE1D4F495000748868 /* Info.plist */,
+			);
+			path = gchatUITests;
+			sourceTree = "<group>";
+		};
+		18E2CCFA1D4F4BE700748868 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18E2CCFB1D4F4BE700748868 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18E2CCFC1D4F4BE700748868 /* Category */,
+				18E2CCFD1D4F4BE700748868 /* Lib */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18E2CCFC1D4F4BE700748868 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		18E2CCFD1D4F4BE700748868 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E2CCC31D4F495000748868 /* gchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E2CCF11D4F495000748868 /* Build configuration list for PBXNativeTarget "gchat" */;
+			buildPhases = (
+				18E2CCC01D4F495000748868 /* Sources */,
+				18E2CCC11D4F495000748868 /* Frameworks */,
+				18E2CCC21D4F495000748868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gchat;
+			productName = gchat;
+			productReference = 18E2CCC41D4F495000748868 /* gchat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E2CCDC1D4F495000748868 /* gchatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E2CCF41D4F495000748868 /* Build configuration list for PBXNativeTarget "gchatTests" */;
+			buildPhases = (
+				18E2CCD91D4F495000748868 /* Sources */,
+				18E2CCDA1D4F495000748868 /* Frameworks */,
+				18E2CCDB1D4F495000748868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E2CCDF1D4F495000748868 /* PBXTargetDependency */,
+			);
+			name = gchatTests;
+			productName = gchatTests;
+			productReference = 18E2CCDD1D4F495000748868 /* gchatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18E2CCE71D4F495000748868 /* gchatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E2CCF71D4F495000748868 /* Build configuration list for PBXNativeTarget "gchatUITests" */;
+			buildPhases = (
+				18E2CCE41D4F495000748868 /* Sources */,
+				18E2CCE51D4F495000748868 /* Frameworks */,
+				18E2CCE61D4F495000748868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E2CCEA1D4F495000748868 /* PBXTargetDependency */,
+			);
+			name = gchatUITests;
+			productName = gchatUITests;
+			productReference = 18E2CCE81D4F495000748868 /* gchatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E2CCBC1D4F495000748868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					18E2CCC31D4F495000748868 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = PSWDJYT9P2;
+					};
+					18E2CCDC1D4F495000748868 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = PSWDJYT9P2;
+						TestTargetID = 18E2CCC31D4F495000748868;
+					};
+					18E2CCE71D4F495000748868 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = PSWDJYT9P2;
+						TestTargetID = 18E2CCC31D4F495000748868;
+					};
+				};
+			};
+			buildConfigurationList = 18E2CCBF1D4F495000748868 /* Build configuration list for PBXProject "gchat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E2CCBB1D4F495000748868;
+			productRefGroup = 18E2CCC51D4F495000748868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E2CCC31D4F495000748868 /* gchat */,
+				18E2CCDC1D4F495000748868 /* gchatTests */,
+				18E2CCE71D4F495000748868 /* gchatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E2CCC21D4F495000748868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E2CCD71D4F495000748868 /* LaunchScreen.storyboard in Resources */,
+				18E2CCD41D4F495000748868 /* Assets.xcassets in Resources */,
+				18E2CCD21D4F495000748868 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E2CCDB1D4F495000748868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E2CCE61D4F495000748868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E2CCC01D4F495000748868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E2CCCF1D4F495000748868 /* ViewController.m in Sources */,
+				18E2CCCC1D4F495000748868 /* AppDelegate.m in Sources */,
+				18E2CCC91D4F495000748868 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E2CCD91D4F495000748868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E2CCE21D4F495000748868 /* gchatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E2CCE41D4F495000748868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E2CCED1D4F495000748868 /* gchatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E2CCDF1D4F495000748868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E2CCC31D4F495000748868 /* gchat */;
+			targetProxy = 18E2CCDE1D4F495000748868 /* PBXContainerItemProxy */;
+		};
+		18E2CCEA1D4F495000748868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E2CCC31D4F495000748868 /* gchat */;
+			targetProxy = 18E2CCE91D4F495000748868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18E2CCD01D4F495000748868 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E2CCD11D4F495000748868 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18E2CCD51D4F495000748868 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E2CCD61D4F495000748868 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E2CCEF1D4F495000748868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18E2CCF01D4F495000748868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E2CCF21D4F495000748868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = gchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yht.gchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18E2CCF31D4F495000748868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = gchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yht.gchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18E2CCF51D4F495000748868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gchatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yht.gchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gchat.app/gchat";
+			};
+			name = Debug;
+		};
+		18E2CCF61D4F495000748868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gchatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yht.gchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gchat.app/gchat";
+			};
+			name = Release;
+		};
+		18E2CCF81D4F495000748868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = gchatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yht.gchatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = gchat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		18E2CCF91D4F495000748868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = gchatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yht.gchatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = gchat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E2CCBF1D4F495000748868 /* Build configuration list for PBXProject "gchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E2CCEF1D4F495000748868 /* Debug */,
+				18E2CCF01D4F495000748868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E2CCF11D4F495000748868 /* Build configuration list for PBXNativeTarget "gchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E2CCF21D4F495000748868 /* Debug */,
+				18E2CCF31D4F495000748868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E2CCF41D4F495000748868 /* Build configuration list for PBXNativeTarget "gchatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E2CCF51D4F495000748868 /* Debug */,
+				18E2CCF61D4F495000748868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E2CCF71D4F495000748868 /* Build configuration list for PBXNativeTarget "gchatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E2CCF81D4F495000748868 /* Debug */,
+				18E2CCF91D4F495000748868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E2CCBC1D4F495000748868 /* Project object */;
+}
