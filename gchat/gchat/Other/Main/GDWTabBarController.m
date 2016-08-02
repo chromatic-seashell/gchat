@@ -9,6 +9,7 @@
 #import "GDWTabBarController.h"
 #import "GDWNavigationController.h"
 
+
 #import "GDWConversationController.h"
 #import "GDWContactController.h"
 #import "GDWDiscoverController.h"
@@ -48,12 +49,12 @@
 
 - (void)addChildViewController:(UIViewController *)childController title:(NSString *)title imageName:(NSString *)imageName {
     
+    //1.设置文字
     childController.title = title;
     childController.tabBarItem.title = title;
+    //2.设置图片
     childController.tabBarItem.image = [UIImage imageNamed:imageName];
-    
-    NSString *selectedImageName = [NSString stringWithFormat:@"%@HL", imageName];
-    UIImage *selectedImage = [UIImage imageNamed:selectedImageName];
+        UIImage *selectedImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@HL", imageName]];
     selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     childController.tabBarItem.selectedImage = selectedImage;
     
@@ -61,11 +62,11 @@
     textAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
     textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
     [childController.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
-    
     NSMutableDictionary *selectedTextAttrs = [NSMutableDictionary dictionary];
     selectedTextAttrs[NSForegroundColorAttributeName] = KColor(14, 180, 0);
     [childController.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
     
+    //3.设置导航控制器的跟控制器,并添加到tabBar控制器.
     GDWNavigationController *nav = [[GDWNavigationController alloc] initWithRootViewController:childController];
     [self addChildViewController:nav];
 }

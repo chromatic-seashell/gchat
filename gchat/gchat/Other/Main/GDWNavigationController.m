@@ -17,21 +17,24 @@
 
 + (void)initialize
 {
+    //1.设置导航条的外观属性
     UINavigationBar *navBar = [UINavigationBar appearance];
     navBar.tintColor = [UIColor whiteColor];
     [navBar setBackgroundImage:[UIImage imageNamed:@"bg_nav"] forBarMetrics:UIBarMetricsDefault];
-    [navBar setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
-    
     NSMutableDictionary *att = [NSMutableDictionary dictionary];
     att[NSForegroundColorAttributeName] = [UIColor whiteColor];
     att[NSFontAttributeName] = [UIFont systemFontOfSize:20];
     [navBar setTitleTextAttributes:att];
     
+    //2.设置UIBarButtonItem的外观属性.
     UIBarButtonItem *appearance = [UIBarButtonItem appearance];
     NSMutableDictionary *itemAttrs = [NSMutableDictionary dictionary];
     itemAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     itemAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:17];
-    itemAttrs[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
+    //itemAttrs[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowOffset = CGSizeZero;
+    itemAttrs[NSShadowAttributeName] = shadow;
     [appearance setTitleTextAttributes:itemAttrs forState:UIControlStateNormal];
     
     NSMutableDictionary *highTextAttrs = [NSMutableDictionary dictionaryWithDictionary:itemAttrs];
