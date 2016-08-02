@@ -10,4 +10,6 @@
 
 @interface GDWContactController : UITableViewController
 
++ (instancetype)shareController;
+
 @end

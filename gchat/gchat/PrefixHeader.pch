@@ -11,6 +11,15 @@
 #define PrefixHeader_pch
 
 
+
+//常量
+#import "GDWConst.h"
+
+//偏好设置
+#import "GDWDataBaseTool.h"
+
+
+
 #pragma mark - -------------------------常用宏-------------------------
 // 1.颜色
 #define KColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]

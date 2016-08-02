@@ -45,6 +45,8 @@
     [self addChildViewController:[[GDWContactController alloc] init] title:@"通讯录" imageName:@"tabbar_contacts"];
     [self addChildViewController:[[GDWDiscoverController alloc] init] title:@"发现" imageName:@"tabbar_discover"];
     [self addChildViewController:[[GDWMeViewController alloc] init] title:@"我" imageName:@"tabbar_me"];
+    
+    self.selectedIndex = 1;
 }
 
 - (void)addChildViewController:(UIViewController *)childController title:(NSString *)title imageName:(NSString *)imageName {

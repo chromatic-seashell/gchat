@@ -29,7 +29,7 @@
     //2.设置UIBarButtonItem的外观属性.
     UIBarButtonItem *appearance = [UIBarButtonItem appearance];
     NSMutableDictionary *itemAttrs = [NSMutableDictionary dictionary];
-    itemAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    itemAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
     itemAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:17];
     //itemAttrs[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
     NSShadow *shadow = [[NSShadow alloc] init];
@@ -38,7 +38,7 @@
     [appearance setTitleTextAttributes:itemAttrs forState:UIControlStateNormal];
     
     NSMutableDictionary *highTextAttrs = [NSMutableDictionary dictionaryWithDictionary:itemAttrs];
-    highTextAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    highTextAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
     [appearance setTitleTextAttributes:highTextAttrs forState:UIControlStateHighlighted];
     
     NSMutableDictionary *itemDisabledAttrs = [NSMutableDictionary dictionary];

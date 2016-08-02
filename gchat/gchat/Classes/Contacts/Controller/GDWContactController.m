@@ -7,27 +7,100 @@
 //
 
 #import "GDWContactController.h"
+#import "EMClient.h"
 
-@interface GDWContactController ()
+@interface GDWContactController ()<EMContactManagerDelegate>
+{
+    NSIndexPath *_currentLongPressIndex;
+}
 
+// 功能列表
+@property (nonatomic, strong) NSMutableArray *functionGroup;
+/** 好友的数组 */
+@property (nonatomic, strong) NSMutableArray *dataSource;
+/** 格式化的好友列表数据 */
+@property (nonatomic, strong) NSMutableArray *data;
+/** 拼音首字母列表 */
+@property (nonatomic, strong) NSMutableArray *section;
+
+@property (nonatomic) NSInteger unapplyCount;
 @end
 
 @implementation GDWContactController
 
+static  GDWContactController*controller = nil;
+
++ (instancetype)shareController
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        controller = [[self alloc] init];
+    });
+    return controller;
+}
+#pragma mark - 懒加载
+- (NSMutableArray *)functionGroup
+{
+    if (_functionGroup == nil){
+        self.functionGroup = [NSMutableArray array];
+    }
+    return _functionGroup;
+}
+
+- (NSMutableArray *)dataSource
+{
+    if (_dataSource == nil){
+        self.dataSource = [NSMutableArray array];
+    }
+    return _dataSource;
+}
+
+- (NSMutableArray *)data
+{
+    if (_data == nil){
+        self.data = [NSMutableArray array];
+    }
+    return _data;
+}
+
+- (NSMutableArray *)section
+{
+    if (_section == nil){
+        self.section = [NSMutableArray array];
+    }
+    return _section;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [[EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self setupNavItem];
+    
+    [self setTableView];
+}
+- (void)setupNavItem
+{
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(addContactAction)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setTableView{
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.sectionIndexColor = [UIColor lightGrayColor];
+    //    self.tableView.tableFooterView = [[UIView alloc] init];
+    self.tableView.sectionIndexBackgroundColor = [UIColor clearColor];
+    self.tableView.sectionIndexTrackingBackgroundColor = [UIColor clearColor];
+    self.tableView.rowHeight = 50.f;
+    
+    //    [self.tableView setTableHeaderView:self.searchController.searchBar];
+    //    [self.tableView setTableFooterView:self.footerLabel];
 }
+- (void)addContactAction
+{
+    
+}
+
 
 #pragma mark - Table view data source
 
@@ -41,58 +114,5 @@
     return 0;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
