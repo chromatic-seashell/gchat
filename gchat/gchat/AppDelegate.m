@@ -68,10 +68,10 @@ Client Secret: YXA6tCTu71vzgySxWVEmMORJKVhomDY
 
 - (void)switchRootViewController:(NSNotification *)note
 {
-    NSLog(@"%s",__func__);
-   //NSString *userId =  [GDWDataBaseTool  getUserDefaultsWithKey:@"userId"];
+    //NSLog(@"%s",__func__);
+   NSString *userId =  [GDWDataBaseTool  getUserDefaultsWithKey:@"userId"];
     NSString *userName = [[EMClient sharedClient] currentUsername];
-    //NSLog(@"%@--%@--%s",userName,userId,__func__);
+    NSLog(@"%@--%@--%s",userName,userId,__func__);
     if (userName.length) {
         GDWTabBarController *tabBarVC = [[GDWTabBarController alloc] init];
         self.window.rootViewController = tabBarVC;
@@ -86,7 +86,7 @@ Client Secret: YXA6tCTu71vzgySxWVEmMORJKVhomDY
 /* !自动登录返回结果 @param aError 错误信息*/
 - (void)didAutoLoginWithError:(EMError *)aError {
 
-     NSLog(@"%s",__func__);
+     //NSLog(@"%s",__func__);
     if (!aError) {//自动登录没有错误
         [[NSNotificationCenter defaultCenter] postNotificationName:KSwitchRootViewControllerNotification object:nil];
     } else {
